@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E41C836212105340021EFBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41C835212105340021EFBA /* AppDelegate.swift */; };
+		7E41C838212105340021EFBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41C837212105340021EFBA /* ViewController.swift */; };
+		7E41C83B212105340021EFBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E41C839212105340021EFBA /* Main.storyboard */; };
+		7E41C83D212105350021EFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E41C83C212105350021EFBA /* Assets.xcassets */; };
+		7E41C840212105350021EFBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E41C83E212105350021EFBA /* LaunchScreen.storyboard */; };
+		7E41C84B212105360021EFBA /* DetroitHistoryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41C84A212105360021EFBA /* DetroitHistoryAppTests.swift */; };
+		7E41C856212105360021EFBA /* DetroitHistoryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41C855212105360021EFBA /* DetroitHistoryAppUITests.swift */; };
+		7E987CCC21224BF800113C6A /* HistoricalMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E987CCB21224BF800113C6A /* HistoricalMarker.swift */; };
+		81DC79B9E94D4C89B67D46D4 /* Pods_DetroitHistoryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543934A529532B2A834F6B85 /* Pods_DetroitHistoryApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E41C847212105360021EFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E41C82A212105340021EFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E41C831212105340021EFBA;
+			remoteInfo = DetroitHistoryApp;
+		};
+		7E41C852212105360021EFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E41C82A212105340021EFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E41C831212105340021EFBA;
+			remoteInfo = DetroitHistoryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		503BFF3B1915D8B88992C23A /* Pods-DetroitHistoryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetroitHistoryApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		543934A529532B2A834F6B85 /* Pods_DetroitHistoryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetroitHistoryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E41C832212105340021EFBA /* DetroitHistoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetroitHistoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E41C835212105340021EFBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E41C837212105340021EFBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E41C83A212105340021EFBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E41C83C212105350021EFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E41C83F212105350021EFBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E41C841212105350021EFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E41C846212105360021EFBA /* DetroitHistoryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetroitHistoryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E41C84A212105360021EFBA /* DetroitHistoryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroitHistoryAppTests.swift; sourceTree = "<group>"; };
+		7E41C84C212105360021EFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E41C851212105360021EFBA /* DetroitHistoryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetroitHistoryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E41C855212105360021EFBA /* DetroitHistoryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroitHistoryAppUITests.swift; sourceTree = "<group>"; };
+		7E41C857212105360021EFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E987CCB21224BF800113C6A /* HistoricalMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalMarker.swift; sourceTree = "<group>"; };
+		ED2218165A0DCDACACFA71EB /* Pods-DetroitHistoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetroitHistoryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E41C82F212105340021EFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DC79B9E94D4C89B67D46D4 /* Pods_DetroitHistoryApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E41C843212105360021EFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E41C84E212105360021EFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53D8C30BB90AE1611263495F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				503BFF3B1915D8B88992C23A /* Pods-DetroitHistoryApp.debug.xcconfig */,
+				ED2218165A0DCDACACFA71EB /* Pods-DetroitHistoryApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E41C829212105340021EFBA = {
+			isa = PBXGroup;
+			children = (
+				7E41C834212105340021EFBA /* DetroitHistoryApp */,
+				7E41C849212105360021EFBA /* DetroitHistoryAppTests */,
+				7E41C854212105360021EFBA /* DetroitHistoryAppUITests */,
+				7E41C833212105340021EFBA /* Products */,
+				53D8C30BB90AE1611263495F /* Pods */,
+				A2628E9666485B5D17729F5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E41C833212105340021EFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E41C832212105340021EFBA /* DetroitHistoryApp.app */,
+				7E41C846212105360021EFBA /* DetroitHistoryAppTests.xctest */,
+				7E41C851212105360021EFBA /* DetroitHistoryAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E41C834212105340021EFBA /* DetroitHistoryApp */ = {
+			isa = PBXGroup;
+			children = (
+				7E987CCA21224BD400113C6A /* Data */,
+				7E41C835212105340021EFBA /* AppDelegate.swift */,
+				7E41C837212105340021EFBA /* ViewController.swift */,
+				7E41C839212105340021EFBA /* Main.storyboard */,
+				7E41C83C212105350021EFBA /* Assets.xcassets */,
+				7E41C83E212105350021EFBA /* LaunchScreen.storyboard */,
+				7E41C841212105350021EFBA /* Info.plist */,
+			);
+			path = DetroitHistoryApp;
+			sourceTree = "<group>";
+		};
+		7E41C849212105360021EFBA /* DetroitHistoryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E41C84A212105360021EFBA /* DetroitHistoryAppTests.swift */,
+				7E41C84C212105360021EFBA /* Info.plist */,
+			);
+			path = DetroitHistoryAppTests;
+			sourceTree = "<group>";
+		};
+		7E41C854212105360021EFBA /* DetroitHistoryAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E41C855212105360021EFBA /* DetroitHistoryAppUITests.swift */,
+				7E41C857212105360021EFBA /* Info.plist */,
+			);
+			path = DetroitHistoryAppUITests;
+			sourceTree = "<group>";
+		};
+		7E987CCA21224BD400113C6A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7E987CCB21224BF800113C6A /* HistoricalMarker.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A2628E9666485B5D17729F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				543934A529532B2A834F6B85 /* Pods_DetroitHistoryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E41C831212105340021EFBA /* DetroitHistoryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E41C85A212105360021EFBA /* Build configuration list for PBXNativeTarget "DetroitHistoryApp" */;
+			buildPhases = (
+				8BB84DF8A174576255072E62 /* [CP] Check Pods Manifest.lock */,
+				7E41C82E212105340021EFBA /* Sources */,
+				7E41C82F212105340021EFBA /* Frameworks */,
+				7E41C830212105340021EFBA /* Resources */,
+				0B1BCEE16657DD0155CA9273 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DetroitHistoryApp;
+			productName = DetroitHistoryApp;
+			productReference = 7E41C832212105340021EFBA /* DetroitHistoryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E41C845212105360021EFBA /* DetroitHistoryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E41C85D212105360021EFBA /* Build configuration list for PBXNativeTarget "DetroitHistoryAppTests" */;
+			buildPhases = (
+				7E41C842212105360021EFBA /* Sources */,
+				7E41C843212105360021EFBA /* Frameworks */,
+				7E41C844212105360021EFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E41C848212105360021EFBA /* PBXTargetDependency */,
+			);
+			name = DetroitHistoryAppTests;
+			productName = DetroitHistoryAppTests;
+			productReference = 7E41C846212105360021EFBA /* DetroitHistoryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E41C850212105360021EFBA /* DetroitHistoryAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E41C860212105360021EFBA /* Build configuration list for PBXNativeTarget "DetroitHistoryAppUITests" */;
+			buildPhases = (
+				7E41C84D212105360021EFBA /* Sources */,
+				7E41C84E212105360021EFBA /* Frameworks */,
+				7E41C84F212105360021EFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E41C853212105360021EFBA /* PBXTargetDependency */,
+			);
+			name = DetroitHistoryAppUITests;
+			productName = DetroitHistoryAppUITests;
+			productReference = 7E41C851212105360021EFBA /* DetroitHistoryAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E41C82A212105340021EFBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Waleed Johnson";
+				TargetAttributes = {
+					7E41C831212105340021EFBA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7E41C845212105360021EFBA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7E41C831212105340021EFBA;
+					};
+					7E41C850212105360021EFBA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7E41C831212105340021EFBA;
+					};
+				};
+			};
+			buildConfigurationList = 7E41C82D212105340021EFBA /* Build configuration list for PBXProject "DetroitHistoryApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E41C829212105340021EFBA;
+			productRefGroup = 7E41C833212105340021EFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E41C831212105340021EFBA /* DetroitHistoryApp */,
+				7E41C845212105360021EFBA /* DetroitHistoryAppTests */,
+				7E41C850212105360021EFBA /* DetroitHistoryAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E41C830212105340021EFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E41C840212105350021EFBA /* LaunchScreen.storyboard in Resources */,
+				7E41C83D212105350021EFBA /* Assets.xcassets in Resources */,
+				7E41C83B212105340021EFBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E41C844212105360021EFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E41C84F212105360021EFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1BCEE16657DD0155CA9273 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BB84DF8A174576255072E62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetroitHistoryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E41C82E212105340021EFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E41C838212105340021EFBA /* ViewController.swift in Sources */,
+				7E41C836212105340021EFBA /* AppDelegate.swift in Sources */,
+				7E987CCC21224BF800113C6A /* HistoricalMarker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E41C842212105360021EFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E41C84B212105360021EFBA /* DetroitHistoryAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E41C84D212105360021EFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E41C856212105360021EFBA /* DetroitHistoryAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E41C848212105360021EFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E41C831212105340021EFBA /* DetroitHistoryApp */;
+			targetProxy = 7E41C847212105360021EFBA /* PBXContainerItemProxy */;
+		};
+		7E41C853212105360021EFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E41C831212105340021EFBA /* DetroitHistoryApp */;
+			targetProxy = 7E41C852212105360021EFBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E41C839212105340021EFBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E41C83A212105340021EFBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E41C83E212105350021EFBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E41C83F212105350021EFBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E41C858212105360021EFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E41C859212105360021EFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E41C85B212105360021EFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503BFF3B1915D8B88992C23A /* Pods-DetroitHistoryApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W6CX2HVL6;
+				INFOPLIST_FILE = DetroitHistoryApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waleed.DetroitHistoryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E41C85C212105360021EFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2218165A0DCDACACFA71EB /* Pods-DetroitHistoryApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W6CX2HVL6;
+				INFOPLIST_FILE = DetroitHistoryApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waleed.DetroitHistoryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E41C85E212105360021EFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W6CX2HVL6;
+				INFOPLIST_FILE = DetroitHistoryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waleed.DetroitHistoryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetroitHistoryApp.app/DetroitHistoryApp";
+			};
+			name = Debug;
+		};
+		7E41C85F212105360021EFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W6CX2HVL6;
+				INFOPLIST_FILE = DetroitHistoryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waleed.DetroitHistoryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetroitHistoryApp.app/DetroitHistoryApp";
+			};
+			name = Release;
+		};
+		7E41C861212105360021EFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W6CX2HVL6;
+				INFOPLIST_FILE = DetroitHistoryAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waleed.DetroitHistoryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DetroitHistoryApp;
+			};
+			name = Debug;
+		};
+		7E41C862212105360021EFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W6CX2HVL6;
+				INFOPLIST_FILE = DetroitHistoryAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = waleed.DetroitHistoryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DetroitHistoryApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E41C82D212105340021EFBA /* Build configuration list for PBXProject "DetroitHistoryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E41C858212105360021EFBA /* Debug */,
+				7E41C859212105360021EFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E41C85A212105360021EFBA /* Build configuration list for PBXNativeTarget "DetroitHistoryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E41C85B212105360021EFBA /* Debug */,
+				7E41C85C212105360021EFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E41C85D212105360021EFBA /* Build configuration list for PBXNativeTarget "DetroitHistoryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E41C85E212105360021EFBA /* Debug */,
+				7E41C85F212105360021EFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E41C860212105360021EFBA /* Build configuration list for PBXNativeTarget "DetroitHistoryAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E41C861212105360021EFBA /* Debug */,
+				7E41C862212105360021EFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E41C82A212105340021EFBA /* Project object */;
+}
