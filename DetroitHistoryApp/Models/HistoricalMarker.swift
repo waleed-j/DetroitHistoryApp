@@ -23,7 +23,7 @@ class HistoricalMarker: Object {
     @objc dynamic var markerAddress = ""
     @objc dynamic var keyword = ""
     @objc dynamic var markerLocationMiscInfo = ""
-    @objc dynamic var visited = true
+    @objc dynamic var visited = false
     
     convenience init(markerJson: JSON) {
         self.init()

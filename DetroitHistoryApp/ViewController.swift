@@ -17,9 +17,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var historicalMarkers : List<HistoricalMarker> = List<HistoricalMarker>()
     @IBOutlet weak var mapView: MKMapView!
     let regionRadius: CLLocationDistance = 3000
+    private var currentIndex = 0
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mapView.delegate = self
         
         // Center Map on Campus Martius Origin Point Location
         let initialLocation = CLLocation(latitude: 42.331600, longitude: -83.046714)
@@ -61,6 +64,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
                         if(updateDB){
                             HistoricalMarker.handleUpdateRequest(markerJSON: marker)
                         } else {
+                            //Test Case. Just to see if marker color changes when visited
+                            //TODO: remove once we are able to change visited status from the marker
+                           /* let elementation = HistoricalMarker(markerJson: marker)
+                            if element.1["attributes"]["HM_ID"] == features[0]["attributes"]["HM_ID"] {
+                                elementation.visited = true
+                            }
+                            self.historicalMarkers.append(elementation)*/
+                            
                             self.historicalMarkers.append(HistoricalMarker(markerJson: marker))
                         }
                     }
@@ -95,25 +106,26 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     func setUpMapMarkers(){
         for historicalMarker in historicalMarkers {
-            let marker = MKPointAnnotation()
-            marker.title = historicalMarker.markerName
-            marker.coordinate = CLLocationCoordinate2D(latitude: historicalMarker.latitude, longitude: historicalMarker.longitude)
+            let marker = HistoricalMarkerAnnotation(marker: historicalMarker)
             mapView.addAnnotation(marker)
         }
     }
     
     // MARK: MKMapViewDelegate
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard annotation is MKPointAnnotation else { return nil }
+        guard annotation is HistoricalMarkerAnnotation else { return nil }
         
-        let identifier = "Annotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: HistoricalMarkerAnnotationView.IDENTIFIER)
         
         if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView = HistoricalMarkerAnnotationView(annotation: annotation, reuseIdentifier: HistoricalMarkerAnnotationView.IDENTIFIER)
             annotationView!.canShowCallout = true
         } else {
             annotationView!.annotation = annotation
+        }
+        
+        if let historicalMarkerAnnotationView = annotationView as? HistoricalMarkerAnnotationView {
+            historicalMarkerAnnotationView.setViewBackground()
         }
         
         return annotationView

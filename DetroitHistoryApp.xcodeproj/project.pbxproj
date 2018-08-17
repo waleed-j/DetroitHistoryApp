@@ -17,6 +17,8 @@
 		7E987CCC21224BF800113C6A /* HistoricalMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E987CCB21224BF800113C6A /* HistoricalMarker.swift */; };
 		7EA502E12126519100073A00 /* MarkerDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA502E02126519100073A00 /* MarkerDataWrapper.swift */; };
 		7EA502E421265EB000073A00 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA502E321265EB000073A00 /* HelperFunctions.swift */; };
+		7EA502E62127790B00073A00 /* HistoricalMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA502E52127790B00073A00 /* HistoricalMarkerAnnotationView.swift */; };
+		7EA502E821277EDE00073A00 /* HistoricalMarkerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA502E721277EDE00073A00 /* HistoricalMarkerAnnotation.swift */; };
 		81DC79B9E94D4C89B67D46D4 /* Pods_DetroitHistoryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543934A529532B2A834F6B85 /* Pods_DetroitHistoryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		7E987CCB21224BF800113C6A /* HistoricalMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalMarker.swift; sourceTree = "<group>"; };
 		7EA502E02126519100073A00 /* MarkerDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerDataWrapper.swift; sourceTree = "<group>"; };
 		7EA502E321265EB000073A00 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		7EA502E52127790B00073A00 /* HistoricalMarkerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalMarkerAnnotationView.swift; sourceTree = "<group>"; };
+		7EA502E721277EDE00073A00 /* HistoricalMarkerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalMarkerAnnotation.swift; sourceTree = "<group>"; };
 		ED2218165A0DCDACACFA71EB /* Pods-DetroitHistoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetroitHistoryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,8 @@
 				7E41C83C212105350021EFBA /* Assets.xcassets */,
 				7E41C83E212105350021EFBA /* LaunchScreen.storyboard */,
 				7E41C841212105350021EFBA /* Info.plist */,
+				7EA502E52127790B00073A00 /* HistoricalMarkerAnnotationView.swift */,
+				7EA502E721277EDE00073A00 /* HistoricalMarkerAnnotation.swift */,
 			);
 			path = DetroitHistoryApp;
 			sourceTree = "<group>";
@@ -353,8 +359,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA502E421265EB000073A00 /* HelperFunctions.swift in Sources */,
+				7EA502E62127790B00073A00 /* HistoricalMarkerAnnotationView.swift in Sources */,
 				7E41C838212105340021EFBA /* ViewController.swift in Sources */,
 				7E41C836212105340021EFBA /* AppDelegate.swift in Sources */,
+				7EA502E821277EDE00073A00 /* HistoricalMarkerAnnotation.swift in Sources */,
 				7E987CCC21224BF800113C6A /* HistoricalMarker.swift in Sources */,
 				7EA502E12126519100073A00 /* MarkerDataWrapper.swift in Sources */,
 			);
