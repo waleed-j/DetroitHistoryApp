@@ -15,6 +15,8 @@
 		7E41C84B212105360021EFBA /* DetroitHistoryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41C84A212105360021EFBA /* DetroitHistoryAppTests.swift */; };
 		7E41C856212105360021EFBA /* DetroitHistoryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41C855212105360021EFBA /* DetroitHistoryAppUITests.swift */; };
 		7E987CCC21224BF800113C6A /* HistoricalMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E987CCB21224BF800113C6A /* HistoricalMarker.swift */; };
+		7EA502E12126519100073A00 /* MarkerDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA502E02126519100073A00 /* MarkerDataWrapper.swift */; };
+		7EA502E421265EB000073A00 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA502E321265EB000073A00 /* HelperFunctions.swift */; };
 		81DC79B9E94D4C89B67D46D4 /* Pods_DetroitHistoryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543934A529532B2A834F6B85 /* Pods_DetroitHistoryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		7E41C855212105360021EFBA /* DetroitHistoryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroitHistoryAppUITests.swift; sourceTree = "<group>"; };
 		7E41C857212105360021EFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E987CCB21224BF800113C6A /* HistoricalMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalMarker.swift; sourceTree = "<group>"; };
+		7EA502E02126519100073A00 /* MarkerDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerDataWrapper.swift; sourceTree = "<group>"; };
+		7EA502E321265EB000073A00 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		ED2218165A0DCDACACFA71EB /* Pods-DetroitHistoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetroitHistoryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,10 +119,11 @@
 		7E41C834212105340021EFBA /* DetroitHistoryApp */ = {
 			isa = PBXGroup;
 			children = (
-				7E987CCA21224BD400113C6A /* Data */,
+				7E987CCA21224BD400113C6A /* Models */,
 				7E41C835212105340021EFBA /* AppDelegate.swift */,
 				7E41C837212105340021EFBA /* ViewController.swift */,
 				7E41C839212105340021EFBA /* Main.storyboard */,
+				7EA502E221265E8200073A00 /* Utils */,
 				7E41C83C212105350021EFBA /* Assets.xcassets */,
 				7E41C83E212105350021EFBA /* LaunchScreen.storyboard */,
 				7E41C841212105350021EFBA /* Info.plist */,
@@ -144,12 +149,21 @@
 			path = DetroitHistoryAppUITests;
 			sourceTree = "<group>";
 		};
-		7E987CCA21224BD400113C6A /* Data */ = {
+		7E987CCA21224BD400113C6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7E987CCB21224BF800113C6A /* HistoricalMarker.swift */,
+				7EA502E02126519100073A00 /* MarkerDataWrapper.swift */,
 			);
-			path = Data;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7EA502E221265E8200073A00 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7EA502E321265EB000073A00 /* HelperFunctions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A2628E9666485B5D17729F5B /* Frameworks */ = {
@@ -297,11 +311,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DetroitHistoryApp/Pods-DetroitHistoryApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,9 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA502E421265EB000073A00 /* HelperFunctions.swift in Sources */,
 				7E41C838212105340021EFBA /* ViewController.swift in Sources */,
 				7E41C836212105340021EFBA /* AppDelegate.swift in Sources */,
 				7E987CCC21224BF800113C6A /* HistoricalMarker.swift in Sources */,
+				7EA502E12126519100073A00 /* MarkerDataWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
